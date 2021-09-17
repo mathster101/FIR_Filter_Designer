@@ -40,7 +40,6 @@ def filter_signal(input_signal, filter_coefficients):
 fs = 1000
 sig = dummy_signal(fs,2000)
 
-
 #taps = kaiser_filter(10, 40, fs, sig)
 taps = design_filter(10,fs,30,'hamming')
 filtered = filter_signal(sig, taps)
